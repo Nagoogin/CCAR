@@ -20,10 +20,6 @@
 
 	<style>
 
-       li {
-            text-decoration: none;
-        }
-
 		body {
 			background-color: #F0F0F0;
 			padding-top: 50px;
@@ -32,6 +28,13 @@
         .boxes {
             text-align: center;
             font-size: 1.2em;
+        }
+
+        .copyright {
+            background-color: #2F3F4E;
+            color: white;
+            text-align: left;
+            padding-top: 5px;
         }
 
 		#home a {
@@ -46,19 +49,21 @@
     	}
 
     	.footer {
-    		background: #2F3F4E;
+    		background-color: #2F3F4E;
     		color: white;
-    		padding: 50px 0 50px 0;
+    		padding: 50px 20px 50px 0;
     		text-align: left;
     	}
 
         .footer-box {
             /*text-align: center;*/
+            text-align: left;
+            margin: 2px 20px 0 0;
         }
 
         .footer-head {
             font-family: 'Lato', sans-serif;
-            font-size: 1.1em;
+            font-size: 1em;
             margin: 0;
             padding-bottom: 10px;
         }
@@ -68,9 +73,13 @@
             list-style: none;
         }
 
+        .line {
+            border-top: 2px solid #BDBDBD;
+            padding-top: 10px;
+        }
+
         .link {
             background-color: #FFD84B;
-            border: 1px solid #003366;
             font-family: 'Lato', sans-serif;
             font-size: 1em;
         }
@@ -95,7 +104,6 @@
     	}
 
     	.mission {
-    		/*background: #FFD84B;*/
     		margin-top: -5px;
     		padding: 10px 0 50px 0;
     		text-align: center;
@@ -111,15 +119,43 @@
             margin-bottom: 20px;
         }
 
-        .navbar-default{
-            background-color: #003366;
-        }
-
         p {
             font-family: 'Lato', sans-serif;
         }
 
-    	
+    	.site-link {
+            color: white;
+            font-family: 'Lato', sans-serif;
+            text-decoration: none;
+
+        }
+
+        .site-link:hover {
+            color: white;
+            text-decoration: none;
+        }
+
+        #social-media-icons {
+            float: left;
+            margin: 0;
+        }
+
+        #social-media-icons ul li {
+            display: inline;
+            margin-right: 5px;
+        }
+
+        #Facebook:hover {
+            content: url('images/Facebook.png');
+        }
+
+        #Twitter:hover {
+            content: url('images/Twitter.png');
+        }
+
+        #LinkedIn:hover {
+            content: url('images/LinkedIn.png');
+        }
 
 	</style>
 </head>
@@ -159,38 +195,40 @@
 		</div>
 	</nav>
     <div class="container-fluid">
-    	<div class="row">
-    		<div class="col-sm-2"></div>
-    		<div class="col-sm-8"></div>
-			<div class="col-sm-2"></div>
-    	</div>
         <div class="row">
-        	<div class="col-sm-12 mission">
-	        	<div class="col-sm-2"></div>
-	            <div class="col-sm-8">
+        	<div class="col-md-12 mission">
+	        	<div class="col-md-2"></div>
+	            <div class="col-md-8">
 	            	<h1 class="motto">WE LOVE TO SUPPORT HIGHER EDUCATION</h1>
 
 	            	<p>The Contra Costa Association of Realtors Scholarship Foundation provides college scholarship grants to qualifying students in the fields of finance, business and real estate. Our commitment to support higher education is the heart of the Contra Costa Association of Realtors' desire to make a difference!</p>
 
 	            </div>
-	            <div class="col-sm-2"></div>
+	            <div class="col-md-2"></div>
 	        </div>
         </div>
         <div class="row">
-        	<div class="col-sm-12 middle">
-        		<div class="col-sm-2"></div>
-        		<div class="col-sm-8 boxes">
-        			 <div class="col-sm-4">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+        <div class="row">
+        	<div class="col-md-12 middle">
+        		<div class="col-md-2"></div>
+        		<div class="col-md-8 boxes">
+        			 <div class="col-md-4">
         			 	<h3 class="med-text">The Scholarship</h3>
         			 	<p>Find out more about the scholarship, eligibility, and what you need to submit with your application.</p>
                         <a class="btn btn-secondary link" href="#" role="button">Eligibility</a>
         			 </div>
-        			 <div class="col-sm-4">
+        			 <div class="col-md-4">
         			 	<h3 class="med-text">The Foundation</h3>
         			 	<p>Learn about the CCAR Scholarship Foundation, our history, and meet the board of trustees.</p>
                         <a class="btn btn-secondary link" href="#" role="button">About Us</a>
         			 </div>
-        			 <div class="col-sm-4">
+        			 <div class="col-md-4">
         			 	<h3 class="med-text">Dates & Deadlines</h3>
                         <p><strong>3/1/2016</strong> — Application Opens<br/>
                             <strong>4/30/2016</strong> — Application Due<br/>
@@ -198,41 +236,55 @@
                             <strong>7/8/2016</strong> — Award Luncheon</p>
         			 </div>
         		</div>
-        		<div class="col-sm-2"></div>
+        		<div class="col-md-2"></div>
         	</div>
         </div>
         <div class="row footer">
-        	<!-- <div class="col-sm-12 footer"> -->
-        		<div class="col-sm-2"></div>
-        		<div class="col-sm-2 footer-box">
-        			<p>
-        			Contra Costa Association of Realtors®</br>
-					1870 Olympic Blvd., Suite 200</br>
-					Walnut Creek, CA 94596</br>
-					</br>
-					Phone: (925) 295-1270</br>
-					Fax: (925) 938-1294
-					</p>
-        		</div>
-                <div class="col-sm-2 footer-box"></div>
-                <div class="col-sm-2 footer-box">
-                    <h4 class="footer-head">Scholarship</h4>
-                    <ul>
-                        <li><a href="#">Eligibility</a></li>
-                        <li><a href="#">Application</a></li>
-                    </ul>
-                </div>
-        		<div class="col-sm-2 footer-box">
-                    <h4 class="footer-head"><a href="#">Foundation</a></h4>
-                    <ul>
-                        <li><a href="#">Trustees</a></li>
-                        <li><a href="#">Contribution</a></li>
-                        <li><a href="#">Events</a></li>
-                    </ul>
-                </div>
-                <div class="col-sm-2"></div>
-        	</div>
-        <!-- </div> -->
+    		<div class="col-md-2"></div>
+    		<div class="col-md-2 address">
+    			<p>
+    			Contra Costa Association of Realtors®</br>
+				1870 Olympic Blvd., Suite 200</br>
+				Walnut Creek, CA 94596</br>
+				</br>
+				Phone: (925) 295-1270</br>
+				Fax: (925) 938-1294
+				</p>
+    		</div>
+            <div class="col-md-1 footer-box">
+                <h4 class="footer-head">Scholarship</h4>
+                <ul>
+                    <li><a class="site-link" href="#">Eligibility</a></li>
+                    <li><a class="site-link" href="#">Application</a></li>
+                </ul>
+            </div>
+    		<div class="col-md-1 footer-box">
+                <h4 class="footer-head"><a class="site-link" href="#">Foundation</a></h4>
+                <ul>
+                    <li><a class="site-link" href="#">Trustees</a></li>
+                    <li><a class="site-link" href="#">Contribution</a></li>
+                    <li><a class="site-link" href="#">Events</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 footer-box"></div>
+            <div class="col-md-2 footer-box">
+                <div id="social-media-icons">
+                <ul>    
+                    <li><a href="#" target="_blank"><img src="images/FacebookW.png" id="Facebook" alt="Facebook" style="width:35px; height:35px;"/></a></li>
+                    <li><a href="#" target="_blank"><img src="images/TwitterW.png" id="Twitter" alt="Twitter" style="width:35px; height:35px;"/></a></li>
+                    <li><a href="#" target="_blank"><img src="images/LinkedInW.png" id="LinkedIn" alt="LinkedIn" style="width:35px; height:35px;"/></a></li>
+                </ul>
+            </div>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+        <div class="row copyright">
+            <div class="col-md-2"></div>
+            <div class="col-md-8 line">
+                <p>© 2016 CCAR Scholarship Foundation</p>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
     </div>
 
 </body>
