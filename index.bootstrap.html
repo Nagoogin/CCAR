@@ -13,7 +13,11 @@
 	<!-- Optional theme -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> -->
+    <link rel="stylesheet" href="animate.css">
+    <script src="jquery-1.12.1.min.js"></script>
+    <script src="jquery.lettering-0.6.1.min.js"></script>
+    <script src="jquery.textillate.js"></script>
 
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
@@ -37,19 +41,34 @@
             padding-top: 5px;
         }
 
+        .dates {
+            background-color: white;
+            border-bottom: 100px solid white;
+            padding: 30px 0 50px 0;
+            text-align: center;
+        }
+
+        .dates-text {
+            color: white;
+            font-family: 'Lato', sans-serif;
+            font-size: 2em;
+        }
+
+        .dates-title {
+            background-color: #011934;
+            padding: 5px 0 15px 0;
+            text-align: center;
+        }
+
 		#home a {
     		width: 100px;
     		height: 100px;
     		background-image: url('images/CCARlogo.png');
     	}
 
-    	.jumbotron {
-    		background: #4986CF;
-    		/*background: url("images/CCARaward.jpg");*/
-    	}
-
     	.footer {
     		background-color: #2F3F4E;
+            border-top: 5px solid #FFD84B;
     		color: white;
     		padding: 50px 20px 50px 0;
     		text-align: left;
@@ -82,6 +101,7 @@
             background-color: #FFD84B;
             font-family: 'Lato', sans-serif;
             font-size: 1em;
+            transition: all 0.3s ease 0s;
         }
 
         a.link {
@@ -89,7 +109,8 @@
         }
 
         .link:hover {
-            background-color: #F3E2A9;
+            background-color: #3071A9;
+            color: white;
         }
 
         .med-text {
@@ -100,18 +121,19 @@
         }
 
     	.middle {
-    		padding: 50px 0 50px 0;
+    		padding: 50px 0 75px 0;
     	}
 
     	.mission {
+            background-color: #FFDE65;
+            font-size: 1.2em;
     		margin-top: -5px;
-    		padding: 10px 0 50px 0;
+    		padding: 25px 0 50px 0;
     		text-align: center;
-    		font-size: 1.2em;
     	}
 
         .motto {
-            border-bottom: 2px solid #BDBDBD;
+            border-bottom: 2px solid gray;
             color: #003366;
             font-family: 'Lato', sans-serif;
             font-size: 2.5em;
@@ -127,11 +149,12 @@
             color: white;
             font-family: 'Lato', sans-serif;
             text-decoration: none;
+            transition: all 0.3s ease 0s;
 
         }
 
         .site-link:hover {
-            color: white;
+            color: #FFD84B;
             text-decoration: none;
         }
 
@@ -199,7 +222,7 @@
         	<div class="col-md-12 mission">
 	        	<div class="col-md-2"></div>
 	            <div class="col-md-8">
-	            	<h1 class="motto">WE LOVE TO SUPPORT HIGHER EDUCATION</h1>
+	            	<h1 class="motto tlt">We love to support higher education.</h1>
 
 	            	<p>The Contra Costa Association of Realtors Scholarship Foundation provides college scholarship grants to qualifying students in the fields of finance, business and real estate. Our commitment to support higher education is the heart of the Contra Costa Association of Realtors' desire to make a difference!</p>
 
@@ -210,34 +233,55 @@
         <div class="row">
             <div class="col-md-2"></div>
             <div class="col-md-8">
-                
+
             </div>
             <div class="col-md-2"></div>
         </div>
-        <div class="row">
-        	<div class="col-md-12 middle">
-        		<div class="col-md-2"></div>
-        		<div class="col-md-8 boxes">
-        			 <div class="col-md-4">
-        			 	<h3 class="med-text">The Scholarship</h3>
-        			 	<p>Find out more about the scholarship, eligibility, and what you need to submit with your application.</p>
-                        <a class="btn btn-secondary link" href="#" role="button">Eligibility</a>
-        			 </div>
-        			 <div class="col-md-4">
-        			 	<h3 class="med-text">The Foundation</h3>
-        			 	<p>Learn about the CCAR Scholarship Foundation, our history, and meet the board of trustees.</p>
-                        <a class="btn btn-secondary link" href="#" role="button">About Us</a>
-        			 </div>
-        			 <div class="col-md-4">
-        			 	<h3 class="med-text">Dates & Deadlines</h3>
-                        <p><strong>3/1/2016</strong> — Application Opens<br/>
-                            <strong>4/30/2016</strong> — Application Due<br/>
-                            <strong>6/10/2016</strong> — Student Interviews<br/>
-                            <strong>7/8/2016</strong> — Award Luncheon</p>
-        			 </div>
-        		</div>
-        		<div class="col-md-2"></div>
-        	</div>
+        <div class="row middle">
+    		<div class="col-md-2"></div>
+    		<div class="col-md-8 boxes">
+    			 <div class="col-md-4">
+    			 	<h3 class="med-text">The Scholarship</h3>
+    			 	<p>Find out more about the scholarship, eligibility, and what you need to submit with your application.</p>
+                    <a class="btn btn-secondary link" href="#" role="button">Eligibility</a>
+    			 </div>
+    			 <div class="col-md-4">
+    			 	<h3 class="med-text">The Foundation</h3>
+    			 	<p>Learn about the CCAR Scholarship Foundation, our history, and meet the board of trustees.</p>
+                    <a class="btn btn-secondary link" href="#" role="button">About Us</a>
+    			 </div>
+                 <div class="col-md-4">
+                    <h3 class="med-text">Past Recipients</h3>
+                    <p> Check out our gallery of the 2014 and 2015 scholarship recipients at their award luncheons</p>
+                    <a class="btn btn-secondary link" href="#" role="button">Gallery</a>
+                 </div>
+    		</div>
+    		<div class="col-md-2"></div>
+        </div>
+        <div class="row dates-title">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <h3 class="dates-text">Dates & Deadlines</h3>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+        <div class="row dates">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <div class="col-md-3">
+                    <p><strong>3/1/2016</strong> — Application Opens</p>
+                </div>
+                <div class="col-md-3">
+                    <p><strong>4/30/2016</strong> — Application Due</p>
+                </div>
+                <div class="col-md-3">
+                    <p><strong>6/10/2016</strong> — Student Interviews</p>
+                </div>
+                <div class="col-md-3">
+                    <p><strong>7/8/2016</strong> — Award Luncheon</p>
+                </div>  
+            </div>
+            <div class="col-md-2"></div>
         </div>
         <div class="row footer">
     		<div class="col-md-2"></div>
@@ -251,6 +295,7 @@
 				Fax: (925) 938-1294
 				</p>
     		</div>
+            <div class="col-md-1 footer-box"></div>
             <div class="col-md-1 footer-box">
                 <h4 class="footer-head">Scholarship</h4>
                 <ul>
@@ -259,14 +304,21 @@
                 </ul>
             </div>
     		<div class="col-md-1 footer-box">
-                <h4 class="footer-head"><a class="site-link" href="#">Foundation</a></h4>
+                <h4 class="footer-head">About Us</h4>
                 <ul>
+                    <li><a class="site-link" href="#">Foundation</a></li>
                     <li><a class="site-link" href="#">Trustees</a></li>
                     <li><a class="site-link" href="#">Contribution</a></li>
-                    <li><a class="site-link" href="#">Events</a></li>
                 </ul>
             </div>
-            <div class="col-md-2 footer-box"></div>
+            <div class="col-md-1 footer-box">
+                <h4 class="footer-head">About Us</h4>
+                <ul>
+                    <li><a class="site-link" href="#">Events</a></li>
+                    <li><a class="site-link" href="#">Gallery</a></li>
+                </ul>
+            </div>
+            <!-- <div class="col-md-1 footer-box"></div> -->
             <div class="col-md-2 footer-box">
                 <div id="social-media-icons">
                 <ul>    
@@ -286,6 +338,15 @@
             <div class="col-md-2"></div>
         </div>
     </div>
+
+    <!-- Script for motto animation -->
+    <script>
+        $(function() {
+            $('.tlt').textillate({
+                in: {effect: 'flipInX', shuffle: true}
+            });
+        })
+    </script>
 
 </body>
 
