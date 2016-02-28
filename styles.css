@@ -1,0 +1,119 @@
+body {
+	background-color: #F0F0F0;
+	padding-top: 100px;
+}
+
+.copyright {
+    background-color: #2F3F4E;
+    color: white;
+    text-align: left;
+    padding-top: 5px;
+}
+
+.footer {
+	background-color: #2F3F4E;
+    border-top: 5px solid #FFD84B;
+	color: white;
+	padding: 50px 20px 50px 0;
+	text-align: left;
+}
+
+.footer-box {
+    /*text-align: center;*/
+    text-align: left;
+    margin: 2px 0 0 0;
+}
+
+.footer-head {
+    font-family: 'Lato', sans-serif;
+    font-size: 1em;
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+.icons {
+    background-color: #2F3F4E;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+.line {
+    border-top: 2px solid #BDBDBD;
+    padding-top: 10px;
+}
+
+.navbar-default {
+    background-color: white;
+    background-image: none;
+    background-repeat: no-repeat;
+    color:yellow;
+}
+
+nav {
+    padding:25px;
+
+}
+
+.nav.navbar-nav li a {
+    color: #003366;
+    font-family: 'Lato', sans-serif;
+    transition: all 0.3s ease 0s;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    background-color: white;
+    color: #FFD84B;
+}
+
+.navbar .nav > li.dropdown.open > .dropdown-toggle, .navbar .nav > li.dropdown.active > .dropdown-toggle,
+.navbar .nav > li.dropdown.open.active > .dropdown-toggle {
+    color: #FFD84B;
+    background-color: transparent;
+    border-color: transparent;
+    background:transparent;
+    outline:none;
+    
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+}
+
+.site-link {
+    color: white;
+    font-family: 'Lato', sans-serif;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+
+}
+
+.site-link:hover {
+    color: #FFD84B;
+    text-decoration: none;
+}
+
+#social-media-icons {
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+#social-media-icons ul li {
+    display: inline;
+    margin-right: 5px;
+}
+
+#Facebook:hover {
+    content: url('images/Facebook.png');
+}
+
+#Twitter:hover {
+    content: url('images/Twitter.png');
+}
+
+#LinkedIn:hover {
+    content: url('images/LinkedIn.png');
+}

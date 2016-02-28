@@ -26,53 +26,39 @@
 
 	<style>
 
-        .boxes {
-            text-align: center;
+        .apply-text {
+            padding-top: 8px;
+        }
+
+        .eligibility-application {
+            background-color: #0D2134;
+            color: white;
+            font-family: 'Lato', sans-serif;
+            font-size: 1.75em;
+            padding: 25px 0 25px 0;
+        }
+
+        .eligibility-text {
+            font-family: 'Lato', sans-serif;
             font-size: 1.2em;
+            padding: 50px 0 50px 0;
         }
 
-        .date {
-            border-bottom: 2px dotted gray;
-            color: #FF4444;
+		.eligibility-title {
+            background-color: #0D2134;
+            color: white;
             font-family: 'Lato', sans-serif;
-            margin: 0;
-            padding-bottom: 10px;
-        }
-
-        .dates {
-            padding: 30px 0 50px 0;
+            padding: 10px 0 15px 0;
             text-align: center;
         }
 
-        .dates-box {
-            font-family: 'Lato', sans-serif;
-            font-size: 1.5em;
-            text-align: center;
-        }
 
-        .dates-text {
-            color: #003366;
-            font-family: 'Lato', sans-serif;
-            font-size: 2.25em;
-            padding: 15px 0 15px 0;
-        }
-
-        .dates-title {
-            border-top: 1px solid gray;
-            padding: 15px 0 15px 0;
-            text-align: center;
-        }
-
-		#home a {
-    		width: 100px;
-    		height: 100px;
-    		background-image: url('images/CCARlogo.png');
-    	}
 
         .link {
             background-color: #FFD84B;
             font-family: 'Lato', sans-serif;
             font-size: 1em;
+            padding-bottom: 10px;
             transition: all 0.3s ease 0s;
         }
 
@@ -83,34 +69,6 @@
         .link:hover {
             background-color: #3071A9;
             color: white;
-        }
-
-        .med-text {
-            color: #003366;
-            font-family: 'Lato', sans-serif;
-            font-size: 1.65em;
-            padding-bottom: 5px;
-        }
-
-    	.middle {
-    		padding: 50px 0 75px 0;
-    	}
-
-    	.mission {
-            background-color: #FFDE65;
-            font-size: 1.2em;
-    		margin-top: -5px;
-    		padding: 25px 0 50px 0;
-    		text-align: center;
-    	}
-
-        .motto {
-            border-bottom: 1px solid gray;
-            color: #003366;
-            font-family: 'Lato', sans-serif;
-            font-size: 2.5em;
-            padding-bottom: 20px;
-            margin-bottom: 20px;
         }
 
 	</style>
@@ -157,67 +115,68 @@
 	</nav>
     <div class="container-fluid">
         <div class="row">
-        	<div class="col-md-12 mission">
+        	<div class="col-md-12 eligibility-title">
 	        	<div class="col-md-3"></div>
 	            <div class="col-md-6">
-	            	<h1 class="motto tlt">We love to support higher education.</h1>
-	            	<p>The Contra Costa Association of Realtors Scholarship Foundation provides college scholarship grants to qualifying students in the fields of finance, business and real estate. Our commitment to support higher education is the heart of the Contra Costa Association of Realtors' desire to make a difference!</p>
+	            	<h1 class="motto tlt">Scholarship Eligibility</h1>
 	            </div>
 	            <div class="col-md-3"></div>
 	        </div>
         </div>
-        <div class="row">
+        <div class="row eligibility-text">
             <div class="col-md-3"></div>
             <div class="col-md-6">
-
+                <p>Scholarship candidates may be either undergraduates or graduate students. All
+                applicants must strictly comply with the application process and fully meet all of
+                the following requirements.</p>
+                <h4>Without exception, candidates must:</h4>
+                <ol>
+                    <li>Have already completed <strong>ONE YEAR</strong> of full-time college study; i.e., cannot be
+                    an incoming freshman</li>
+                    <li>Be currently enrolled full-time in college</li>
+                    <li>Have completed courses of study that reflect an emphasis on real estate, finance
+                    and/or business</li>
+                    <li>Have a GPA (grade point average) of 3.0 or higher</li>
+                    <li>Be a resident of Contra Costa County</li>
+                </ol>
+                <h4>Submit an application to include:</h4>
+                <ul>
+                    <li>Your most recent transcript</li>
+                    <li>Letter of recommendation on school stationery from one of your instructors</li>
+                    <li>A 300 word essay stating your reasons for pursuing a career in real estate, finance
+                    and/or business</li>
+                </ul>
             </div>
             <div class="col-md-3"></div>
         </div>
-        <div class="row middle">
-    		<div class="col-md-3"></div>
-    		<div class="col-md-6 boxes">
-    			 <div class="col-md-4">
-    			 	<h3 class="med-text">The Scholarship</h3>
-    			 	<p>Find out more about the scholarship, eligibility, and what you need to submit with your application.</p>
-                    <a class="btn btn-secondary link" href="#" role="button">Eligibility</a>
-    			 </div>
-    			 <div class="col-md-4">
-    			 	<h3 class="med-text">The Foundation</h3>
-    			 	<p>Learn about the CCAR Scholarship Foundation, our history, and meet the board of trustees.</p>
-                    <a class="btn btn-secondary link" href="#" role="button">About Us</a>
-    			 </div>
-                 <div class="col-md-4">
-                    <h3 class="med-text">Past Recipients</h3>
-                    <p> Take a look at our gallery of the 2014 and 2015 scholarship recipients at their award luncheons</p>
-                    <a class="btn btn-secondary link" href="#" role="button">Gallery</a>
-                 </div>
-    		</div>
-    		<div class="col-md-3"></div>
-        </div>
-        <div class="row">
+        <div class="row eligibility-application">
             <div class="col-md-3"></div>
-            <div class="col-md-6 dates-title">
-                <h3 class="dates-text">Dates & Deadlines</h3>
+            <div class="col-md-3 apply-text">
+                If you're ready to apply
+            </div>
+            <div class="col-md-3">
+                <a class="btn btn-secondary link" href="#" role="button">Apply now&nbsp&nbsp&nbsp<span class="glyphicon glyphicon-menu-right glyph" aria-hidden="true" style="vertical-align:middle"></span></a>
             </div>
             <div class="col-md-3"></div>
         </div>
-        <div class="row dates">
+        <div class="row eligibility-text">
             <div class="col-md-3"></div>
             <div class="col-md-6">
-                <div class="col-md-3 dates-box">
-                    <h3 class="date"><strong>3/1/2016</strong></h3><br /><p>Application Opens</p>
-                </div>
-                <div class="col-md-3 dates-box">
-                    <h3 class="date"><strong>4/30/2016</strong></h3><br /><p>Application Due</p>
-                </div>
-                <div class="col-md-3 dates-box">
-                    <h3 class="date"><strong>6/10/2016</strong></h3><br /><p>Student Interviews</p>
-                </div>
-                <div class="col-md-3 dates-box">
-                    <h3 class="date"><strong>7/8/2016</strong></h3><br /><p>Award Luncheon</p>
-                </div>  
+                <h4>Scholarship Amount and Expectations:</h4>
+                <p>Upon completing and submitting the written application requirements no later than April 30th, 2016,
+                each scholarship candidate is required to attend a personal interview in Walnut Creek, California
+                with the Foundation trustees. The interview will approximately take one hour and is an important
+                part of the selection criteria. Advance notice will be given. Interviews are tentatively scheduled
+                for the morning of June 10th, 2016.</p>
+                <p>Upon notification of a scholarship award, each scholarship winner is expected to attend the annual CCAR
+                scholarship awards luncheon. It is scheduled for July 8th, 2016 at the (LOCATION). The scholarship winner and both
+                parents are guests of the Foundation at this event. The student is expected to briefly address the audience
+                at the luncheon.</p>
+                <p>Scholarship awards range from $1500-$2500 for each qualifying student. The funds are wired directly from
+                the CCAR Scholarship Foundation account to the student's school account in time for the Fall semester.
+                Student candidates can apply and be awarded scholarships up to two times.</p>
             </div>
-            <div class="col-md-3"></div>
+            <div class="col-md-6"></div>
         </div>
         <div class="row footer">
             <div class="col-md-3"></div>
