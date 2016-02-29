@@ -10,156 +10,40 @@
     <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
+	<link rel="stylesheet" href="styles.css">
+
 	<!-- Optional theme -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> -->
+    <link rel="stylesheet" href="animate.css">
+    <script src="jquery-1.12.1.min.js"></script>
+    <script src="jquery.lettering-0.6.1.min.js"></script>
+    <script src="jquery.textillate.js"></script>
+
 
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
 	<style>
-
-       li {
-            text-decoration: none;
-        }
-
-		body {
-			background-color: #F0F0F0;
-			padding-top: 100px;
-		}
-
-        .boxes {
-            text-align: center;
-            font-size: 1.2em;
-        }
-
-		#home a {
-    		width: 100px;
-    		height: 100px;
-    		background-image: url('images/CCARlogo.png');
-    	}
-
-    	.jumbotron {
-    		background: #4986CF;
-    		/*background: url("images/CCARaward.jpg");*/
-    	}
-
-    	.footer {
-    		background: #2F3F4E;
-    		color: white;
-    		padding: 50px 0 50px 0;
-    		text-align: left;
-    	}
-
-        .footer-box {
-            /*text-align: center;*/
-        }
-
-        .footer-head {
-            font-family: 'Lato', sans-serif;
-            font-size: 1.1em;
-            margin: 0;
-            padding-bottom: 10px;
-        }
-
-        ul {
-            padding: 0;
-            list-style: none;
-        }
-
-        .link {
-            background-color: #FFD84B;
-            border: 1px solid #003366;
-            font-family: 'Lato', sans-serif;
-            font-size: 1em;
-        }
-
-        a.link {
-            color: black;
-        }
-
-        .link:hover {
-            background-color: #F3E2A9;
-        }
-
-        .med-text {
-            color: #003366;
-            font-family: 'Lato', sans-serif;
-            font-size: 1.65em;
-            padding-bottom: 5px;
-        }
-
-    	.middle {
-    		padding: 50px 0 50px 0;
-    	}
-
-    	.mission {
-    		/*background: #FFD84B;*/
-    		margin-top: -5px;
-    		padding: 10px 0 50px 0;
-    		text-align: center;
-    		font-size: 1.2em;
-    	}
-
-        .motto {
-            border-bottom: 2px solid #BDBDBD;
-            color: #003366;
-            font-family: 'Lato', sans-serif;
-            font-size: 2.5em;
-            padding-bottom: 20px;
-            margin-bottom: 20px;
-        }
-
-        .navbar-default {
-  			background-color:#2F3F4E;
-  			background-image: none;
-  			background-repeat: no-repeat;
-  			color:yellow;
- 		}
- 		
- 		nav {
- 			padding:25px;
- 		
- 		}
- 		
- 		.nav.navbar-nav li a {
-    		color: orange;
-		}
-		
-		.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-    		background-color: #2F3F4E;
-    		color: white;
-		}
-		
-		.navbar .nav > li.dropdown.open > .dropdown-toggle, .navbar .nav > li.dropdown.active > .dropdown-toggle,
-		.navbar .nav > li.dropdown.open.active > .dropdown-toggle {
-    		color: white;
-    		background-color: transparent;
-    		border-color: transparent;
-    		background:transparent;
-    		outline:none;
-    		
-		}
 		
 		img {
 			width: 90%;
 		}
-		
-		
 
-        p {
-            font-family: 'Lato', sans-serif;
-        }
+		.title-box {
+			background-color: #FFDE65;
+			color: #003366;
+			font-family: 'Lato', sans-serif;
+			margin-bottom: 50px;
+			padding: 25px 0 25px 0;
+			text-align: center;
+		}
         
-        
-
-    	
-
 	</style>
 </head>
 <body>
-	<nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+	<nav class="navbar navbar-default navbar-fixed-top">
 		<div class="container-fluid">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=
@@ -168,40 +52,43 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#">CCAR</a>
+				<a class="navbar-brand" href="index.bootstrap.html">CCAR</a>
 			</div>
 			<div class="collapse navbar-collapse" id="my-navbar">
-				<ul class="nav navbar-nav">
-	 				<li class="active"><a href="#">HOME</a></li>
+				<ul class="nav navbar-nav navbar-right">
 					<li class="dropdown">
 						<a class="dropdown-toggle" data-toggle="dropdown" href="#">SCHOLARSHIP<span class="caret"></span></a>
 	    				<ul class="dropdown-menu">
-	    					<li><a href="#">ELIGIBILITY</a></li>
+	    					<li><a href="eligibility.bootstrap.html">ELIGIBILITY</a></li>
 							<li><a href="#">APPLICATION</a></li>
 	    				</ul>
 					</li>
 	  				<li class="dropdown">
-	  					<a class="dropdown-toggle" data-toggle="dropdown" href="#">FOUNDATION<span class="caret"></span></a>
+	  					<a class="dropdown-toggle" data-toggle="dropdown" href="#">ABOUT US<span class="caret"></span></a>
 	    				<ul class="dropdown-menu">
-		  					<li><a href="#">TRUSTEES</a></li>
-		  					<li><a href="#">CONTRIBUTION</a></li>
-		  					<li role="separator" class="divider"></li>
-		  					<li><a href="#">EVENTS</a></li>
+                            <li><a href="foundation.bootstrap.html">FOUNDATION</a></li>
+		  					<li><a href="trustees.bootstrap.html">TRUSTEES</a></li>
+		  					<li><a href="contribution.bootstrap.html">CONTRIBUTION</a></li>
 		  				</ul>
 	  				</li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">MORE<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">EVENTS</a></li>
+                            <li><a href="#">GALLERY</a></li>
+                        </ul>
+                    </li>
 				</ul>
 			</div>
 		</div>
 	</nav>
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
-        	<div class="col-sm-12 mission">
+        	<div class="col-md-12 title-box">
 	        	<div class="col-sm-2"></div>
 	            <div class="col-sm-8">
-	            	<h1 class="motto">Meet the CCAR Scholarship Trustees!</h1>
-
-	            	<p>The Contra Costa Association of Realtors Scholarship Foundation provides college scholarship grants to qualifying students in the fields of finance, business and real estate. Our commitment to support higher education is the heart of the Contra Costa Association of Realtors' desire to make a difference!</p>
-
+	            	<h1 class="tlt">Meet the CCAR Scholarship Trustees</h1>
+	            	<p class="line">The Contra Costa Association of Realtors Scholarship Foundation provides college scholarship grants to qualifying students in the fields of finance, business and real estate. Our commitment to support higher education is the heart of the Contra Costa Association of Realtors' desire to make a difference!</p>
 	            </div>
 	            <div class="col-sm-2"></div>
 	        </div>
@@ -468,7 +355,7 @@
         			 	
         			 	<figure class="block--speaker">
 							<div class="speaker__img row">
-								<img class="img-circle" src="WashU-pic.jpg" alt="Chuck Miller" />
+								<img class="img-circle" src="images/chuckMiller.jpg" alt="Chuck Miller" />
 							</div>
 							<figcaption class="block__label">
 								<h3 class="label__heading">
@@ -520,7 +407,14 @@
         	</div>
         <!-- </div> -->
     </div>
+    <!-- Script for motto animation -->
+    <script>
+        $(function() {
+            $('.tlt').textillate({
+                in: {effect: 'flipInX', shuffle: true}
+            });
+        })
+    </script>
 
 </body>
-
 </html>
