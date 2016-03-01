@@ -16,8 +16,8 @@
 			if (mysqli_connect_error()) {
 				die("Could not connect to database");
 			};
-			//do something to database
-			$query = "INSERT INTO `essay` (`essay`) VALUES(''". $_POST['essay'] ."')";
+			// do something to database
+			$query = "INSERT INTO `applicants` (`essay`) VALUES(''". $_POST['essay'] ."')";
 			
 			mysqli_query($link, $query);
 			

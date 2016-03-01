@@ -46,7 +46,7 @@
 		}
 		else {
 			//do something to database
-			$query = "INSERT INTO `applicants` (`first-name`, `middle-initial`, `last-name`, `gender`, `birthdate`, `citizen`, `home-phone`, `cellphone`, `email`, `address`, `city`, `state`, `zip`) VALUES('". $_POST['first-name'] ."', '". $_POST['middle-initial'] ."', '". $_POST['last-name'] ."', '". $_POST['gender'] ."', '". $_POST['birthdate'] ."', '". $_POST['citizen'] ."', '". $_POST['home-phone'] ."', '". $_POST['cellphone'] ."', '". $_POST['email'] ."', '". $_POST['home-address'] ."', '". $_POST['home-city'] ."', '". $_POST['home-state'] ."', '". $_POST['home-zip'] ."')";
+			$query = "INSERT INTO `applicants` (`first-name`, `middle-name`, `last-name`, `gender`, `birthdate`, `citizen`, `home-phone`, `cellphone`, `email`, `address`, `city`, `state`, `zip`) VALUES('". $_POST['first-name'] ."', '". $_POST['middle-initial'] ."', '". $_POST['last-name'] ."', '". $_POST['gender'] ."', '". $_POST['birthdate'] ."', '". $_POST['citizen'] ."', '". $_POST['home-phone'] ."', '". $_POST['cellphone'] ."', '". $_POST['email'] ."', '". $_POST['home-address'] ."', '". $_POST['home-city'] ."', '". $_POST['home-state'] ."', '". $_POST['home-zip'] ."')";
 			
 			mysqli_query($link, $query);
 		}
@@ -118,8 +118,8 @@
 						<label for="first-name">First Name:</label>
 						<input type="text" name="first-name" class="form-control" placeholder="First Name" value="<?php echo $_POST['first-name']; ?>" />
 
-						<label for="middle-initial">Middle Initial:</label>
-						<input type="text" name="middle-initial" class="form-control" placeholder="Middle Initial" value="<?php echo $_POST['middle-initial']; ?>" />
+						<label for="middle-name">Middle Name:</label>
+						<input type="text" name="middle-name" class="form-control" placeholder="Middle Name" value="<?php echo $_POST['middle-name']; ?>" />
 
 						<label for="last-name">Last Name:</label>
 						<input type="text" name="last-name" class="form-control" placeholder="Last Name" value="<?php echo $_POST['last-name']; ?>" />
